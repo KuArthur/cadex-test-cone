@@ -1,13 +1,18 @@
 import './App.scss';
 
-import InputField from "./components/InputField/InputField"
-
+import InputField from "./components/InputField/InputField";
+import Button from "./components/Button/Button";
+import ConfPanel from "./components/ConfPanel/ConfPanel";
+import Figure from "./components/Figure/Figure"
 const App = () => {
   return(
-    <div>
-      <InputField id = 'coneHeight' value = 'Cone height:' />
-      <InputField id = 'coneTriangles' value = 'Number of triangles:' />
-      <InputField id = 'coneBase' value = 'Base radius:' />
+    <div className="App">
+      <div className = "App--ConfPanel">
+        <ConfPanel />
+      </div>
+      <div className="App--Figure">
+        <Figure />
+      </div>
     </div>
   )
 }
