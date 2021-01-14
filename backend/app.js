@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8000;
 console.log(require('./routes/index'));
 app.use('/api', require('./routes/index'))
 
